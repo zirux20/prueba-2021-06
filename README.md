@@ -6,6 +6,11 @@ A partir del esquema se debe generar una estructura de clases que permita genera
 
 Este formulario debe soportar estilos de [Bootstrap v4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) y [Bulma](https://bulma.io/documentation/) (sugerencia: interfaces o patrón adaptador para hacerlo flexible).
 
+## ¿Cómo instalar y qué vamos a encontrar?
+Ejecuta ```composer install``` para instalar la única dependencia del proyecto y generar el autoload.php del vendor (que es necesario en el index.php).
+
+En el directorio `./src` encontrarás la carpeta `App` que es para la aplicación y `Tests` que son para pruebas unitarias (en caso que lo requieras). En la carpeta App está presente solamente el archivo Form.php que posee el método estático generate. En ese generate puedes llamar al json y luego la generación del formulario.
+
 ## ¿Qué son puntos evaluables?
 * Que la respuesta use Orientación a Objetos.
 * Que la respuesta genere un formulario en pantalla.
@@ -25,3 +30,5 @@ Este formulario debe soportar estilos de [Bootstrap v4](https://getbootstrap.com
 * Haz el diagrama de UML, o escribe los problemas que hay involucrados: al menos son 2 problemas que se pueden resolver con dos patrones de desarrollo distinto.
 * Si vas a usar composer, por favor, que no se olvide hacer commit al composer.lock para hacerlo funcionar.
 * _Personal data_ es un título, no lo hagas en forma de recursividad.
+* Usa cuántos commits sean necesarios. Considera usar comentarios que nos ayude a entender el cambio.
+* Definí un script de composer para ejectuar PHPUnit que hace llamado al vendor que se instala en el composer.json. Se llama usando ```composer pu``` y luego con los parámetros que estimes conveniente.

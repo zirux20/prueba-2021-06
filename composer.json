@@ -12,6 +12,9 @@
             "": "src/"
         }
     },
+    "scripts": {
+        "pu": "./vendor/bin/phpunit "
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     }
